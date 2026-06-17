@@ -23,4 +23,16 @@ Desktop:The main section splits into a side-by-side view (image on the left, tex
 
 UX Improvements
 One-Click Full Screen: Clicking the main image instantly dims the background and opens the high-def photo full-screen. Users can close it by clicking anywhere on the dark background, keeping them on the same page.
-Organized Sections: Keeping the search form at the top and the saved collection at the bottom makes the app simple, clean, and easy to navigate. 
+Organized Sections: Keeping the search form at the top and the saved collection at the bottom makes the app simple, clean, and easy to navigate.  
+
+# assignment 3
+Steps Taken
+ Created the basic HTML structure for the application.
+Added CSS styling to create a responsive layout for mobile, tablet, and desktop devices.
+Connected the application to the NASA APOD API using JavaScript and Fetch API.
+Implemented a search feature that retrieves APOD data based on a selected date.
+Displayed the image, title, date, and explanation returned from the API.
+Added support for APOD video content when the API returns a video instead of an image.
+Implemented a favourites feature.
+Added functionality to remove items from the favourites gallery.
+Tested the application on different screen sizes and fixed bugs.
