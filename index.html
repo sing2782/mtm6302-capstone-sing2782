@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Explorer - NASA APOD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="header-container">
+            <h1>Cosmic Explorer</h1>
+            <p>Discover the cosmos, one day at a time.</p>
+        </div>
+    </header>
+
+    <main class="app-container">
+        <section class="search-section" aria-labelledby="search-heading">
+            <h2 id="search-heading" class="sr-only">Search APOD</h2>
+            <form id="apod-form">
+                <label for="date-input">Select a Date:</label>
+                <div class="form-group">
+                    <input type="date" id="date-input" required>
+                    <button type="submit" id="search-btn">View Universe</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="apod-display" class="apod-card">
+            <div class="media-container">
+                <img id="apod-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200" alt="NASA Astronomy Picture of the Day">
+                <span class="hd-hint">💡 Click image to open high-definition view</span>
+            </div>
+            <div class="apod-content">
+                <div class="apod-header">
+                    <h2 id="apod-title">The Pillars of Creation</h2>
+                    <span id="apod-date" class="date-badge">2026-05-27</span>
+                </div>
+                <p id="apod-explanation">
+                    A spectacular view of interstellar gas and dust in the Eagle Nebula. Captured in near-infrared light, this cosmic landscape reveals new stars forming inside the dense columns of dust and gas.
+                </p>
+                <button id="fav-btn" class="btn-fav">❤️ Add to Favourites</button>
+            </div>
+        </section>
+
+        <section class="favourites-section" aria-labelledby="fav-heading">
+            <h2 id="fav-heading">Your Cosmic Gallery</h2>
+            <div id="favourites-grid" class="favourites-grid"></div>
+                <div class="fav-card">
+                    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400" alt="Andromeda Galaxy">
+                    <div class="fav-card-body">
+                        <div>
+                            <h3>Andromeda Galaxy</h3>
+                            <p class="fav-date">2026-01-15</p>
+                        </div>
+                        <button class="btn-delete">⚠️ Remove From Gallery</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="hd-modal" class="modal hidden" role="dialog" aria-modal="true">
+        <button id="close-modal" class="close-btn" aria-label="Close HD View">&times;</button>
+        <div class="modal-content">
+            <img id="modal-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=2400" alt="HD Space View">
+        </div>
+    </div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
