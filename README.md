@@ -25,7 +25,7 @@ UX Improvements
 One-Click Full Screen: Clicking the main image instantly dims the background and opens the high-def photo full-screen. Users can close it by clicking anywhere on the dark background, keeping them on the same page.
 Organized Sections: Keeping the search form at the top and the saved collection at the bottom makes the app simple, clean, and easy to navigate.  
 
-# assignment 3
+# assignment 4
 Steps Taken
  Created the basic HTML structure for the application.
 Added CSS styling to create a responsive layout for mobile, tablet, and desktop devices.
