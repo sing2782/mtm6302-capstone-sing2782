@@ -179,4 +179,3 @@ function deleteFavourite(date) {
 
     loadFavourites();
 }
-.
